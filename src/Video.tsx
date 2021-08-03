@@ -7,6 +7,7 @@ import {HelloWorld} from './HelloWorld';
 // import HelloWorld from './HelloWorld';
 import {tributevideoData} from './service/apis/tributedata';
 import { videoData } from './service/apis/videodata';
+import {tributevideoData3} from './service/apis/birthday';
 import './video.css';
 
 interface ItemType {
@@ -61,7 +62,7 @@ export const RemotionVideo: React.FC = (props) => {
 		) {
 			data = mediaData;
 		} else {
-			tributeMedia = tributevideoData;
+			tributeMedia = tributevideoData3;
 			Object.keys(tributeMedia.media).forEach((element, index) => {
 				finalData.push(tributeMedia.media[element]);
 				finalData[index]['id'] = element;
